@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Simple Website</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #ddd;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      section {
+        padding: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      /* Add styling for the menu */
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ddd;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .menu button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .menu li {
+        margin: 0 10px;
+      }
+      .menu a {
+        color: #333;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        padding: 10px;
+      }
+      .menu a:hover {
+        background-color: #bbb;
+      }
+      /* Hide the menu on small screens */
+      @media only screen and (max-width: 600px) {
+        .menu {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the menu -->
+    <div class="menu">
+      <button onclick="toggleMenu()">☰</button>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </div>
+    <header>
+      <h1>Kallenpaja Oy</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Welcome to Kallenpaja Oy</h2>
+      <p>We are a metal fabrication company based in Helsinki, Finland. Our goal is to provide high-quality metal products to our clients, no matter how big or small the project.</p>
+    </section>
+    <footer>
+      <p>&copy; 2023 Kallenpaja Oy</p>
+    </footer>
+    <!-- Add JavaScript to toggle the menu -->
+    <script>
